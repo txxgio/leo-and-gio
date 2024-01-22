@@ -1,1 +1,18 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="ltd3YErWxDF/L!%|Xi0w" x="0" y="0"><statement name="HANDLER"><block type="set_current_tilemap" id="0m2(sKF%A4dim.NbS|U9"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="rN|8@b2[f_}W.PD/d/q$"><field name="tilemap">tilemap`level`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data></shadow></value><next><block type="typescript_statement" id="gjEA)!%-TGK~bVH{,ydp" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="namespace userconfig {" line1="    export const ARCADE_SCREEN_WIDTH = 128" line2="    export const ARCADE_SCREEN_HEIGHT = 128" line3="}" numlines="4"></mutation></block></next></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="gO0Mg:.#-e(;xX82PDIc">mySprite</variable><variable type="KIND_SpriteKind" id="N0E:1s-.Bs7Fl0AcDf$c">Player</variable><variable type="KIND_SpriteKind" id="wmx!X)^ab^?2BAxod%[e">Projectile</variable><variable type="KIND_SpriteKind" id="TM|6VBat2[*}NCHI0*]Y">Food</variable><variable type="KIND_SpriteKind" id="+fX4MO?@2r%r!n9-nQ4?">Enemy</variable></variables><block type="pxt-on-start" id="?)Qx6Gnuy4J,9pc=~r3s" x="0" y="0"><statement name="HANDLER"><block type="set_current_tilemap" id="hSg@Ln?sz~1?~%IcGl?t"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="DFmzgiJv[i8HMral4K*B"><field name="tilemap">tilemap`level`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data></shadow></value><next><block type="typescript_statement" id="je7|p6S*bAB@G[8=pl{4" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="namespace userconfig {" line1="    export const ARCADE_SCREEN_WIDTH = 128" line2="    export const ARCADE_SCREEN_HEIGHT = 128" line3="}" numlines="4"></mutation><next><block type="variables_set" id="At@0UuBHOLwW:$CaJIbc"><field name="VAR" id="gO0Mg:.#-e(;xX82PDIc">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="hThm1.D[t@b1wTR*QJ~1"><value name="img"><shadow type="screen_image_picker" id="`iu}hD*?+psfi^oSB},8"><field name="img">img`
+. . . . . f f f f f f . . . . . 
+. . . f f 2 2 2 2 2 2 f f . . . 
+. . f f 2 2 2 2 2 2 2 2 f f . . 
+. f f 2 2 2 2 2 2 2 2 2 2 f f . 
+. f 2 2 2 2 2 2 2 2 2 1 2 2 f . 
+f 2 2 2 2 2 2 2 2 2 1 1 1 2 2 f 
+f 2 2 2 2 2 2 2 2 2 2 1 2 2 2 f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 2 f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 2 f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 2 f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 2 f 
+. f 2 2 2 2 2 2 2 2 2 2 2 2 f . 
+. f 2 2 2 2 2 2 2 2 2 2 2 f f . 
+. . f 2 2 2 2 2 2 2 2 2 f f . . 
+. . . f f 2 2 2 2 2 2 f f . . . 
+. . . . . f f f f f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"`iu}hD*?+psfi^oSB},8"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="OlE0taHZpTfE(kk4J8|-"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></next></block></statement></block></xml>
