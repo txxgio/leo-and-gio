@@ -2,7 +2,9 @@
     "name": "leo and gio",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "controller": "*",
+        "multiplayer": "*"
     },
     "files": [
         "main.blocks",
