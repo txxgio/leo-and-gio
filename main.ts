@@ -1,6 +1,9 @@
 namespace SpriteKind {
     export const selector = SpriteKind.create()
 }
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+	
+})
 sprites.onOverlap(SpriteKind.selector, SpriteKind.Player, function (sprite, otherSprite) {
     otherSprite.follow(sprite)
 })
