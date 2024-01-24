@@ -4,7 +4,8 @@
     "dependencies": {
         "device": "*",
         "controller": "*",
-        "multiplayer": "*"
+        "multiplayer": "*",
+        "arcade-tile-util": "github:microsoft/arcade-tile-util#v1.1.0"
     },
     "files": [
         "main.blocks",
@@ -24,5 +25,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
