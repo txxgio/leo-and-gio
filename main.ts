@@ -1,5 +1,8 @@
-mp.onButtonEvent(mp.MultiplayerButton.A, ControllerButtonEvent.Pressed, function (player2) {
-	
+namespace SpriteKind {
+    export const selector = SpriteKind.create()
+}
+sprites.onOverlap(SpriteKind.selector, SpriteKind.Player, function (sprite, otherSprite) {
+    otherSprite.follow(sprite)
 })
 let b8: Sprite = null
 let b7: Sprite = null
@@ -26,7 +29,7 @@ let highlight = sprites.create(img`
     1 . . . . . . . . . . . . . . 1 
     1 . . . . . . . . . . . . . . 1 
     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-    `, SpriteKind.Player)
+    `, SpriteKind.selector)
 highlight.setPosition(8, 8)
 highlight.setStayInScreen(true)
 tiles.setCurrentTilemap(tilemap`level`)
