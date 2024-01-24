@@ -1,5 +1,5 @@
 mp.onButtonEvent(mp.MultiplayerButton.A, ControllerButtonEvent.Pressed, function (player2) {
-
+	
 })
 let b12: Sprite = null
 let b11: Sprite = null
@@ -276,7 +276,7 @@ game.onUpdate(function () {
     } else if (controller.up.isPressed()) {
         highlight.y += -2
     } else {
-
+    	
     }
 })
 forever(function () {
