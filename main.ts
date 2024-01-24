@@ -1,6 +1,19 @@
 namespace SpriteKind {
     export const selector = SpriteKind.create()
 }
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    tiles.placeOnTile(highlight, highlight.tilemapLocation().getNeighboringLocation(CollisionDirection.Top))
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    for (let value of sprites.allOfKind(SpriteKind.Player)) {
+        if (highlight.tilemapLocation().col == value.tilemapLocation().col && highlight.tilemapLocation().row == value.tilemapLocation().row) {
+            value.follow(highlight, 64)
+        }
+    }
+})
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    tiles.placeOnTile(highlight, highlight.tilemapLocation().getNeighboringLocation(CollisionDirection.Left))
+})
 function spawnPink () {
     p1 = sprites.create(img`
         . . . . . f f f f f f . . . . . 
@@ -329,8 +342,11 @@ function spawnBlue () {
     b8
     ]
 }
-sprites.onOverlap(SpriteKind.selector, SpriteKind.Player, function (sprite, otherSprite) {
-    otherSprite.follow(sprite)
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    tiles.placeOnTile(highlight, highlight.tilemapLocation().getNeighboringLocation(CollisionDirection.Right))
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    tiles.placeOnTile(highlight, highlight.tilemapLocation().getNeighboringLocation(CollisionDirection.Bottom))
 })
 let blue_list: Sprite[] = []
 let b8: Sprite = null
@@ -349,9 +365,10 @@ let p4: Sprite = null
 let p3: Sprite = null
 let p2: Sprite = null
 let p1: Sprite = null
+let highlight: Sprite = null
 let pink_list: Sprite[] = []
 pink_list = []
-let highlight = sprites.create(img`
+highlight = sprites.create(img`
     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
     1 . . . . . . . . . . . . . . 1 
     1 . . . . . . . . . . . . . . 1 
@@ -369,25 +386,12 @@ let highlight = sprites.create(img`
     1 . . . . . . . . . . . . . . 1 
     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
     `, SpriteKind.selector)
-highlight.setPosition(8, 8)
 highlight.setStayInScreen(true)
 tiles.setCurrentTilemap(tilemap`level`)
+tiles.placeOnTile(highlight, tiles.getTileLocation(0, 0))
 namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 128
     export const ARCADE_SCREEN_HEIGHT = 128
 }
 spawnPink()
 spawnBlue()
-game.onUpdate(function () {
-    if (controller.right.isPressed()) {
-        highlight.x += 2
-    } else if (controller.left.isPressed()) {
-        highlight.x += -2
-    } else if (controller.down.isPressed()) {
-        highlight.y += 2
-    } else if (controller.up.isPressed()) {
-        highlight.y += -2
-    } else {
-    	
-    }
-})
