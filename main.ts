@@ -1,7 +1,171 @@
 namespace SpriteKind {
     export const selector = SpriteKind.create()
 }
-function doSomething () {
+function spawnPink () {
+    p1 = sprites.create(img`
+        . . . . . f f f f f f . . . . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . f f 3 3 3 3 3 3 3 3 f f . . 
+        . f f 3 3 3 3 3 3 3 3 3 3 f f . 
+        . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
+        f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+        . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
+        . . f 3 3 3 3 3 3 3 3 3 f f . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . . . . f f f f f f . . . . . 
+        `, SpriteKind.Player)
+    tiles.placeOnTile(p1, tiles.getTileLocation(0, 0))
+    p2 = sprites.create(img`
+        . . . . . f f f f f f . . . . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . f f 3 3 3 3 3 3 3 3 f f . . 
+        . f f 3 3 3 3 3 3 3 3 3 3 f f . 
+        . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
+        f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+        . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
+        . . f 3 3 3 3 3 3 3 3 3 f f . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . . . . f f f f f f . . . . . 
+        `, SpriteKind.Player)
+    tiles.placeOnTile(p2, tiles.getTileLocation(2, 0))
+    p3 = sprites.create(img`
+        . . . . . f f f f f f . . . . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . f f 3 3 3 3 3 3 3 3 f f . . 
+        . f f 3 3 3 3 3 3 3 3 3 3 f f . 
+        . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
+        f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+        . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
+        . . f 3 3 3 3 3 3 3 3 3 f f . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . . . . f f f f f f . . . . . 
+        `, SpriteKind.Player)
+    tiles.placeOnTile(p3, tiles.getTileLocation(4, 0))
+    p4 = sprites.create(img`
+        . . . . . f f f f f f . . . . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . f f 3 3 3 3 3 3 3 3 f f . . 
+        . f f 3 3 3 3 3 3 3 3 3 3 f f . 
+        . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
+        f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+        . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
+        . . f 3 3 3 3 3 3 3 3 3 f f . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . . . . f f f f f f . . . . . 
+        `, SpriteKind.Player)
+    tiles.placeOnTile(p4, tiles.getTileLocation(6, 0))
+    p5 = sprites.create(img`
+        . . . . . f f f f f f . . . . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . f f 3 3 3 3 3 3 3 3 f f . . 
+        . f f 3 3 3 3 3 3 3 3 3 3 f f . 
+        . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
+        f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+        . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
+        . . f 3 3 3 3 3 3 3 3 3 f f . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . . . . f f f f f f . . . . . 
+        `, SpriteKind.Player)
+    tiles.placeOnTile(p5, tiles.getTileLocation(1, 1))
+    p6 = sprites.create(img`
+        . . . . . f f f f f f . . . . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . f f 3 3 3 3 3 3 3 3 f f . . 
+        . f f 3 3 3 3 3 3 3 3 3 3 f f . 
+        . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
+        f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+        . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
+        . . f 3 3 3 3 3 3 3 3 3 f f . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . . . . f f f f f f . . . . . 
+        `, SpriteKind.Player)
+    tiles.placeOnTile(p6, tiles.getTileLocation(3, 1))
+    p7 = sprites.create(img`
+        . . . . . f f f f f f . . . . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . f f 3 3 3 3 3 3 3 3 f f . . 
+        . f f 3 3 3 3 3 3 3 3 3 3 f f . 
+        . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
+        f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+        . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
+        . . f 3 3 3 3 3 3 3 3 3 f f . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . . . . f f f f f f . . . . . 
+        `, SpriteKind.Player)
+    tiles.placeOnTile(p7, tiles.getTileLocation(5, 1))
+    p8 = sprites.create(img`
+        . . . . . f f f f f f . . . . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . f f 3 3 3 3 3 3 3 3 f f . . 
+        . f f 3 3 3 3 3 3 3 3 3 3 f f . 
+        . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
+        f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
+        . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+        . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
+        . . f 3 3 3 3 3 3 3 3 3 f f . . 
+        . . . f f 3 3 3 3 3 3 f f . . . 
+        . . . . . f f f f f f . . . . . 
+        `, SpriteKind.Player)
+    tiles.placeOnTile(p8, tiles.getTileLocation(7, 1))
+    pink_list = [
+    p1,
+    p2,
+    p3,
+    p4,
+    p5,
+    p6,
+    p7,
+    p8
+    ]
+}
+function spawnBlue () {
     b1 = sprites.create(img`
         . . . . . f f f f f f . . . . . 
         . . . f f a a a a a a f f . . . 
@@ -154,10 +318,21 @@ function doSomething () {
         . . . . . f f f f f f . . . . . 
         `, SpriteKind.Player)
     tiles.placeOnTile(b8, tiles.getTileLocation(6, 6))
+    blue_list = [
+    b1,
+    b2,
+    b3,
+    b4,
+    b5,
+    b6,
+    b7,
+    b8
+    ]
 }
 sprites.onOverlap(SpriteKind.selector, SpriteKind.Player, function (sprite, otherSprite) {
     otherSprite.follow(sprite)
 })
+let blue_list: Sprite[] = []
 let b8: Sprite = null
 let b7: Sprite = null
 let b6: Sprite = null
@@ -166,7 +341,16 @@ let b4: Sprite = null
 let b3: Sprite = null
 let b2: Sprite = null
 let b1: Sprite = null
-let list: number[] = []
+let p8: Sprite = null
+let p7: Sprite = null
+let p6: Sprite = null
+let p5: Sprite = null
+let p4: Sprite = null
+let p3: Sprite = null
+let p2: Sprite = null
+let p1: Sprite = null
+let pink_list: Sprite[] = []
+pink_list = []
 let highlight = sprites.create(img`
     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
     1 . . . . . . . . . . . . . . 1 
@@ -192,159 +376,8 @@ namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 128
     export const ARCADE_SCREEN_HEIGHT = 128
 }
-let p1 = sprites.create(img`
-    . . . . . f f f f f f . . . . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . f f 3 3 3 3 3 3 3 3 f f . . 
-    . f f 3 3 3 3 3 3 3 3 3 3 f f . 
-    . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
-    f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-    . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
-    . . f 3 3 3 3 3 3 3 3 3 f f . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . . . . f f f f f f . . . . . 
-    `, SpriteKind.Player)
-tiles.placeOnTile(p1, tiles.getTileLocation(0, 0))
-let p2 = sprites.create(img`
-    . . . . . f f f f f f . . . . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . f f 3 3 3 3 3 3 3 3 f f . . 
-    . f f 3 3 3 3 3 3 3 3 3 3 f f . 
-    . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
-    f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-    . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
-    . . f 3 3 3 3 3 3 3 3 3 f f . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . . . . f f f f f f . . . . . 
-    `, SpriteKind.Player)
-tiles.placeOnTile(p2, tiles.getTileLocation(2, 0))
-let p3 = sprites.create(img`
-    . . . . . f f f f f f . . . . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . f f 3 3 3 3 3 3 3 3 f f . . 
-    . f f 3 3 3 3 3 3 3 3 3 3 f f . 
-    . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
-    f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-    . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
-    . . f 3 3 3 3 3 3 3 3 3 f f . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . . . . f f f f f f . . . . . 
-    `, SpriteKind.Player)
-tiles.placeOnTile(p3, tiles.getTileLocation(4, 0))
-let p4 = sprites.create(img`
-    . . . . . f f f f f f . . . . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . f f 3 3 3 3 3 3 3 3 f f . . 
-    . f f 3 3 3 3 3 3 3 3 3 3 f f . 
-    . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
-    f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-    . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
-    . . f 3 3 3 3 3 3 3 3 3 f f . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . . . . f f f f f f . . . . . 
-    `, SpriteKind.Player)
-tiles.placeOnTile(p4, tiles.getTileLocation(6, 0))
-let p5 = sprites.create(img`
-    . . . . . f f f f f f . . . . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . f f 3 3 3 3 3 3 3 3 f f . . 
-    . f f 3 3 3 3 3 3 3 3 3 3 f f . 
-    . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
-    f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-    . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
-    . . f 3 3 3 3 3 3 3 3 3 f f . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . . . . f f f f f f . . . . . 
-    `, SpriteKind.Player)
-tiles.placeOnTile(p5, tiles.getTileLocation(1, 1))
-let p6 = sprites.create(img`
-    . . . . . f f f f f f . . . . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . f f 3 3 3 3 3 3 3 3 f f . . 
-    . f f 3 3 3 3 3 3 3 3 3 3 f f . 
-    . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
-    f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-    . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
-    . . f 3 3 3 3 3 3 3 3 3 f f . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . . . . f f f f f f . . . . . 
-    `, SpriteKind.Player)
-tiles.placeOnTile(p6, tiles.getTileLocation(3, 1))
-let p7 = sprites.create(img`
-    . . . . . f f f f f f . . . . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . f f 3 3 3 3 3 3 3 3 f f . . 
-    . f f 3 3 3 3 3 3 3 3 3 3 f f . 
-    . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
-    f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-    . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
-    . . f 3 3 3 3 3 3 3 3 3 f f . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . . . . f f f f f f . . . . . 
-    `, SpriteKind.Player)
-tiles.placeOnTile(p7, tiles.getTileLocation(5, 1))
-let p8 = sprites.create(img`
-    . . . . . f f f f f f . . . . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . f f 3 3 3 3 3 3 3 3 f f . . 
-    . f f 3 3 3 3 3 3 3 3 3 3 f f . 
-    . f 3 3 3 3 3 3 3 3 3 1 3 3 f . 
-    f 3 3 3 3 3 3 3 3 3 1 1 1 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 1 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    f 3 3 3 3 3 3 3 3 3 3 3 3 3 3 f 
-    . f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-    . f 3 3 3 3 3 3 3 3 3 3 3 f f . 
-    . . f 3 3 3 3 3 3 3 3 3 f f . . 
-    . . . f f 3 3 3 3 3 3 f f . . . 
-    . . . . . f f f f f f . . . . . 
-    `, SpriteKind.Player)
-tiles.placeOnTile(p8, tiles.getTileLocation(7, 1))
-doSomething()
+spawnPink()
+spawnBlue()
 game.onUpdate(function () {
     if (controller.right.isPressed()) {
         highlight.x += 2
